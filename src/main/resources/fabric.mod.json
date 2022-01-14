@@ -1,38 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "colorstone",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Colorstone",
+  "description": "This mod makes redstone colorful",
   "authors": [
-    "Me!"
+    "FwuffyPetsOwO"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/FwuffyPetsOwO/Colorstone"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/colorstone/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fwuffypetsowo.colorstone.ColorstoneMain"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "colorstone.mixins.json"
   ],
+  "accessWidener": "colorstone.accesswidener",
 
   "depends": {
-    "fabricloader": ">=0.11.3",
-    "fabric": "*",
+    "fabricloader": ">=0.12.12",
     "minecraft": "1.18.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
