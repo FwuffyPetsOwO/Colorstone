@@ -31,7 +31,7 @@ public class RedstoneColorsMixin {
     public void onAnimateTick(BlockState blockState, Level level, BlockPos blockPos, Random random, CallbackInfo ci) {
         int i = blockState.getValue(RedStoneWireBlock.POWER);
         if (i == 0) {
-            ci.cancel();
+            return;
         }
         block4: for (Direction direction : Direction.Plane.HORIZONTAL) {
             RedstoneSide redstoneSide = blockState.getValue(RedStoneWireBlock.PROPERTY_BY_DIRECTION.get(direction));
