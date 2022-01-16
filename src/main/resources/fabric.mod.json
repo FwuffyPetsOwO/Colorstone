@@ -4,12 +4,11 @@
   "version": "${version}",
 
   "name": "Colorstone",
-  "description": "This mod makes redstone colorful",
+  "description": "This mod allows resource packs to modify the colors of redstone in a text file.",
   "authors": [
     "FwuffyPetsOwO"
   ],
   "contact": {
-    "homepage": "",
     "sources": "https://github.com/FwuffyPetsOwO/Colorstone"
   },
 
@@ -25,7 +24,6 @@
   "mixins": [
     "colorstone.mixins.json"
   ],
-  "accessWidener": "colorstone.accesswidener",
 
   "depends": {
     "fabricloader": ">=0.12.12",

@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "RedstoneColorsMixin"
+    "RedstoneColorsMixin",
+    "ModelBakeryMixin"
   ],
   "injectors": {
     "defaultRequire": 1
